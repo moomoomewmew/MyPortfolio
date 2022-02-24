@@ -1,0 +1,218 @@
+/* Google Fonts
+h1=> Fahkwang, 
+Headers => IBM Plex Sans,
+Paragraph => IBM Pleax Mono
+font-family: 'Fahkwang', sans-serif;
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;1,200;1,500&family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap');
+
+:root {
+  --primary-color: #c5daf0;
+  --secondary-color: #fdcbc9;
+  --background-color: #f7f1ef;
+  --accent-color: #e0f459;
+  --hightlight-color: #e2e8f6;
+}
+
+/* BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-family: 'Fahkwang', sans-serif;
+  font-size: 4.2rem;
+  line-height: 4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: 'Fahkwang', sans-serif;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #111;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  border: 1px solid #111;
+  border-radius: 25px;
+  padding: 10px 20px;
+  align-items: left;
+  margin: 20px 0;
+  transition: background 0.5s ease-in-out;
+}
+
+.btn:hover {
+background: #fdcbc9;
+}
+
+.btn:focus {
+  display: none;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  text-align: right;
+  margin: 10px 0;
+}
+
+/* NAV STYLES */
+nav {
+  background-color: var(--hightlight-color);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.dash {
+  width: 6rem;
+  border-top: 1px solid #111;
+  top: -0.28rem;
+  position: relative;
+}
+/* HEADER STYLES */
+header {
+  top: 70px;
+  position: relative;
+  margin-bottom: 70px;
+  background-image: url(../assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -155px;
+}
+
+/* HERO TEXT STYLES */
+.skill-list {
+  font-family: 'IBM Plex Sans', monospace;
+  font-weight: 500;
+  margin: 20px 0;
+  line-height: 1.8rem;
+}
+
+.skill-list li {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  margin-bottom: 10px;
+  height: max-content;
+  border-radius: 50px;
+}
+
+/* SKILLS SECTION STYLES */
+.skills {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-style: italic;
+  font-weight: 400;
+  margin: 150px 0;
+}
+
+.skills li {
+  list-style: none;
+  text-align: center;
+}
+
+/* PROJECT SECTION STYLES */
+.project {
+  background-color: var(--hightlight-color);
+  margin: 45px 0;
+  padding: 25px;
+}
+.project-img {
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.content-box-right {
+  margin-left: 50px;
+}
+
+.content-box-left {
+  margin-right: 50px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+/* FOOTER SECTION STYLES */
+footer {
+  text-align: center;
+  margin: 80px;
+}
+
+footer h2 {
+  font-size: 2.2rem;
+  text-transform: lowercase;
+}
+
+footer p {
+  margin-top: 100px;
+  text-transform: capitalize;
+}
+
+#projects {
+  padding-top: 5em;
+}
+
+#experience {
+  padding: 5em;
+}
