@@ -17,7 +17,6 @@ font-family: 'IBM Plex Sans', sans-serif;
   --hightlight-color: #e2e8f6;
 }
 
-/* BASE STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -86,7 +85,6 @@ figcaption {
   margin: 10px 0;
 }
 
-/* NAV STYLES */
 nav {
   background-color: var(--hightlight-color);
   position: fixed;
@@ -116,7 +114,7 @@ nav ul li {
   top: -0.28rem;
   position: relative;
 }
-/* HEADER STYLES */
+
 header {
   top: 70px;
   position: relative;
@@ -127,7 +125,6 @@ header {
   background-position-y: -155px;
 }
 
-/* HERO TEXT STYLES */
 .skill-list {
   font-family: 'IBM Plex Sans', monospace;
   font-weight: 500;
@@ -154,7 +151,6 @@ header {
   border-radius: 50px;
 }
 
-/* SKILLS SECTION STYLES */
 .skills {
   text-align: center;
   font-size: 2.5rem;
@@ -169,7 +165,6 @@ header {
   text-align: center;
 }
 
-/* PROJECT SECTION STYLES */
 .project {
   background-color: var(--hightlight-color);
   margin: 45px 0;
@@ -193,7 +188,6 @@ header {
   text-align: left;
 }
 
-/* FOOTER SECTION STYLES */
 footer {
   text-align: center;
   margin: 80px;
