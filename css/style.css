@@ -73,7 +73,7 @@ figcaption {
 
 .all-but-navbar{
   border: solid transparent 2px;
-  margin-left: 300px;
+  margin-left: 375px;
 }
 .sidenav {
   height: 100%; 
@@ -97,7 +97,6 @@ figcaption {
   border-radius: 10px;
   text-align: center;
   margin-bottom: 50px;
-
 }
 
 .sidenav a {
@@ -166,7 +165,7 @@ nav ul li {
   margin-bottom: 10px;
   margin: auto;
   height: 10em;
-  border-radius: 50px;
+  border-radius: 100px;
   align-self: center;
 }
 
