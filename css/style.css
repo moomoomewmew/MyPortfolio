@@ -1,21 +1,4 @@
-/* Google Fonts
-h1=> Fahkwang, 
-Headers => IBM Plex Sans,
-Paragraph => IBM Pleax Mono
-font-family: 'Fahkwang', sans-serif;
-font-family: 'IBM Plex Mono', monospace;
-font-family: 'IBM Plex Sans', sans-serif;
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;1,200;1,500&family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap');
-
-:root {
-  --primary-color: #c5daf0;
-  --secondary-color: #fdcbc9;
-  --background-color: #f7f1ef;
-  --accent-color: #e0f459;
-  --hightlight-color: #e2e8f6;
-}
 
 * {
   margin: 0;
@@ -23,15 +6,18 @@ font-family: 'IBM Plex Sans', sans-serif;
   box-sizing: border-box;
 }
 
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
 body {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 300;
-  background-color: var(--background-color);
 }
 
 h1 {
   font-family: 'Fahkwang', sans-serif;
-  font-size: 4.2rem;
+  font-size: 2em;
   line-height: 4rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -55,7 +41,7 @@ a {
 }
 
 a:hover {
-  color: #111;
+  color: #f11ece;
 }
 
 img {
@@ -72,7 +58,7 @@ img {
 }
 
 .btn:hover {
-background: #fdcbc9;
+  color: #f11ece;
 }
 
 .btn:focus {
@@ -85,12 +71,47 @@ figcaption {
   margin: 10px 0;
 }
 
-nav {
-  background-color: var(--hightlight-color);
-  position: fixed;
-  z-index: 10;
-  width: 100%;
+.all-but-navbar{
+  border: solid transparent 2px;
+  margin-left: 300px;
 }
+.sidenav {
+  height: 100%; 
+  width: 300px; 
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin: 1em;
+  position:fixed;
+  background-color: rgb(245, 241, 236);
+  padding: 1em;
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
+  align-content: center;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f11ece;
+}
+
+.main {
+  margin-left: 300px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+    border: dotted black 2px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 
 nav ul {
   margin: 0 auto;
@@ -106,23 +127,7 @@ nav ul li {
   font-weight: 400;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-}
-
-.dash {
-  width: 6rem;
-  border-top: 1px solid #111;
-  top: -0.28rem;
-  position: relative;
-}
-
-header {
-  top: 70px;
-  position: relative;
-  margin-bottom: 70px;
-  background-image: url(../assets/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -155px;
+  text-decoration: none;
 }
 
 .skill-list {
@@ -147,8 +152,9 @@ header {
   box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
   margin-top: 40px;
   margin-bottom: 10px;
-  height: max-content;
+  height: 10em;
   border-radius: 50px;
+  align-self: center;
 }
 
 .skills {
@@ -157,7 +163,11 @@ header {
   line-height: 4rem;
   font-style: italic;
   font-weight: 400;
-  margin: 150px 0;
+  margin: 150px 100px;
+  background-color: rgb(245, 241, 236);
+  padding: 1em;
+  box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
+
 }
 
 .skills li {
@@ -166,7 +176,6 @@ header {
 }
 
 .project {
-  background-color: var(--hightlight-color);
   margin: 45px 0;
   padding: 25px;
 }
@@ -186,21 +195,6 @@ header {
 
 .align-left {
   text-align: left;
-}
-
-footer {
-  text-align: center;
-  margin: 80px;
-}
-
-footer h2 {
-  font-size: 2.2rem;
-  text-transform: lowercase;
-}
-
-footer p {
-  margin-top: 100px;
-  text-transform: capitalize;
 }
 
 #projects {
